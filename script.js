@@ -10,7 +10,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 // ===================================
 function loadGalleryImages() {
   const galleryGrid = document.getElementById("galleryGrid");
-  if (!galleryGrid) return; // Total number of images (anh-01.png to anh-30.png)
+  if (!galleryGrid) return; // Total number of images (anh-01.webp to anh-30.webp)
   const totalImages = 30;
   const imagesToShow = 12; // Number of images to display // Create array of all image numbers
   const allImages = Array.from({ length: totalImages }, (_, i) => i + 1); // Shuffle array to randomize
@@ -24,7 +24,7 @@ function loadGalleryImages() {
     galleryItem.setAttribute("data-aos", "fade-up");
     galleryItem.setAttribute("data-aos-delay", index * 100);
     galleryItem.innerHTML = `
-      <img src="./anh-${imageNum}.png"
+      <img src="./anh-${imageNum}.webp"
         alt="Hình ảnh Bánh rán Quy Khứ ${num}"
         style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; cursor: pointer;"
         loading="lazy">

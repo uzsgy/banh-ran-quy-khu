@@ -42,7 +42,8 @@
   />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="style.min.css"></noscript>
  </head>
  <body>
   <!-- Header -->
@@ -172,7 +173,7 @@
       </div>
      </div>
      <div class="about-image">
-      <img src="./anh-27.png" alt="Mặt tiền Bánh rán Quy Khứ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+      <img src="./anh-27.webp" alt="Mặt tiền Bánh rán Quy Khứ" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" loading="lazy">
      </div>
     </div>
    </div>
@@ -191,7 +192,7 @@
 
     <!-- Menu Image -->
     <div class="menu-image-container" style="text-align: center; margin: 2rem 0;">
-     <img src="./menu.png" alt="Thực đơn Bánh rán Quy Khứ" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+     <img src="./menu.webp" alt="Thực đơn Bánh rán Quy Khứ" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.15);" loading="lazy">
     </div>
 
     <!-- Hidden grid for compatibility -->
@@ -836,6 +837,6 @@
   </button>
 
   <!-- Custom JavaScript -->
-  <script src="script.js"></script>
+  <script src="script.min.js" defer></script>
  </body>
 </html>
